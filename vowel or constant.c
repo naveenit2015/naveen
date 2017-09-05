@@ -8,15 +8,15 @@ int main()
     scanf("%c",&c);
 
     // evaluates to 1 (true) if c is a lowercase vowel
-    isLowercaseVowel = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+    LowercaseVowel = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
 
     // evaluates to 1 (true) if c is an uppercase vowel
-    isUppercaseVowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+    UppercaseVowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
 
     // evaluates to 1 (true) if either isLowercaseVowel or isUppercaseVowel is true
     if (LowercaseVowel || UppercaseVowel)
         printf("%c is a vowel.", c);
     else
-        printf("%c is a consonant.", c);
+        printf("%c is a constant.", c);
     return 0;
 }
